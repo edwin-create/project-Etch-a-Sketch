@@ -12,7 +12,7 @@ for (let i = 0; i < size * size; i++) {
 const gridItems = document.querySelectorAll('.grid-item');
 gridItems.forEach(item => {
     item.addEventListener('mouseover', () => {
-        item.style.backgroundColor = 'black';
+        item.style.backgroundColor = generateRandomColor();
     });
 });
 }
@@ -28,4 +28,10 @@ else{
    
 }
 });
-document.querySelector('#container').textContent = ''; 
+
+function generateRandomColor() {
+let R=  Math.floor(Math.random() * 256);
+let G= Math.floor(Math.random() * 256);
+let B= Math.floor(Math.random() * 256);
+return( "rgb(" + R + "," + G + "," + B + ")");
+}
