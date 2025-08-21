@@ -23,6 +23,16 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
 }
-.grid-item:hover {
-    background-color: #be0a0a;
+button {
+    background-color: #0a0a0a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+.button:hover {
+    background-color: #333;
 }
